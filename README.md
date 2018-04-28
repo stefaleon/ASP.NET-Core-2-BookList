@@ -1,7 +1,7 @@
 ## BookList
 ### an ASP.NET Core 2 basic app
 
-### From [The complete ASP.NET MVC Core 2.0 Course ](https://www.udemy.com/the-complete-aspnet-mvc-core-20-course/)
+### from [The complete ASP.NET MVC Core 2.0 Course ](https://www.udemy.com/the-complete-aspnet-mvc-core-20-course/)
 ### by [Bhrugen Patel](https://www.udemy.com/user/bhrugenpatel/)
 
 
@@ -15,4 +15,11 @@
 &nbsp;
 ### 01 Book model
 
-* Add *Book.cs* in *Models*. 
+* Add *Book.cs* to *Models*.
+
+
+&nbsp;
+### 02 ApplicationDbContext
+
+* Add the *ApplicationDbContext* class.
+* Add the *Books* DbSet to it.
