@@ -23,3 +23,10 @@
 
 * Add the *ApplicationDbContext* class.
 * Add the *Books* DbSet to it.
+
+
+&nbsp;
+### 03 Connection String
+
+* In *Startup.cs*, add the *AddDbContext* service.
+* Define the connection string in *appsettings.json*.
