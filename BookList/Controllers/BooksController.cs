@@ -73,6 +73,24 @@ namespace BookList.Controllers
             return View(book);
         }
 
+        //POST: Books/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, Book book)
+        {
+            if (id != book.Id)
+            {
+                return NotFound();
+            }
+            if (ModelState.IsValid)
+            {
+                _db.Update(book);
+                await _db.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }            
+            return View(book);
+        }
+
         //GET: Books/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {

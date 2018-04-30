@@ -104,3 +104,13 @@
 ### 12 Add the *Edit* and *Delete* GET action methods
 
 * Add the *Edit* and *Delete* GET action methods by making copies of the code for the *Details* action.
+
+
+&nbsp;
+### 13 Add the *Edit* POST action method
+
+* The *Edit* POST method uses the *HttpPost* and *ValidateAntiForgeryToken* attributes.
+* It takes two parameters, a book id and a book object. 
+* Checks for matching of the id parameter with the book object id.
+* It returns an async Task which redirects to the *Index* action after updating the book in the db. 
+* If the model state is not valid, it returns the view and passes the received book object.
