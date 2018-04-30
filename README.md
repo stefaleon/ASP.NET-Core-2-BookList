@@ -98,3 +98,9 @@
 * Display the book name in a disabled input tag.
 * Display the *Edit* and *Back To List* button styled links.
 * Use tag-helpers in order to get the links to call the appropriate actions and route the *Edit* link to the proper book id.
+
+
+&nbsp;
+### 12 Add the *Edit* and *Delete* GET action methods
+
+* Add the *Edit* and *Delete* GET action methods by making copies of the code for the *Details* action.

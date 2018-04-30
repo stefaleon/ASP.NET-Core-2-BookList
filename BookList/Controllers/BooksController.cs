@@ -58,6 +58,36 @@ namespace BookList.Controllers
             return View(book);
         }
 
+        //GET: Books/Edit/5
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
+            {
+                return Content("Invalid book ID");
+            }
+            var book = await _db.Books.SingleOrDefaultAsync(m => m.Id == id);
+            if (book == null)
+            {
+                return Content("This book cannot be found");
+            }
+            return View(book);
+        }
+
+        //GET: Books/Delete/5
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return Content("Invalid book ID");
+            }
+            var book = await _db.Books.SingleOrDefaultAsync(m => m.Id == id);
+            if (book == null)
+            {
+                return Content("This book cannot be found");
+            }
+            return View(book);
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)
