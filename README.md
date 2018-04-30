@@ -37,3 +37,12 @@
 
 * `PM> add-migration AddBookModel`
 * `PM> update-database`
+
+
+&nbsp;
+### 05 BooksController
+
+* Controlers -> add -> Controller -> MVC Controller - Empty, name -> BooksController
+* Add a constructor and associate the *ApplicationDbContext*.
+* Add code for the disposal of the db object.
+* Set the view to return a list of books from the db.
