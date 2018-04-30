@@ -46,3 +46,15 @@
 * Add a constructor and associate the *ApplicationDbContext*.
 * Add code for the disposal of the db object.
 * Set the view to return a list of books from the db.
+
+
+&nbsp;
+### 06 Books Index View
+
+* Right click on the *Index* action method and add the *Views/Books/Index.cshtml* view.
+* Tie the view to an IEnumerable of books model.
+* Add a *Create New* button using tag-helpers and Bootstrap classes.
+* Add custom CSS classes in *wwwroot/css/site.css* and use them in the html code to display the book list.
+* Use html-helpers in the Razor code which loops through and displays the model items.
+* Use tag-helpers to display the *Edit* and *Delete* buttons.
+
