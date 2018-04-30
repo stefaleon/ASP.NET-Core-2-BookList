@@ -125,3 +125,11 @@
 * Takes an id parameter.
 * Finds the book object that matches the id and removes it from the db.
 * Returns an async Task which redirects to the *Index* action.
+
+
+
+&nbsp;
+### 15 Add the *Edit* and *Delete* views
+
+* Add the *Edit* view. Copy the code of the *Create* view. Direct the form asp-action to the *Edit* action and adjust the button text accordingly.
+* Create the *Delete* view as another copy and make the appropriate adjustments. Direct to the *Delete* action, rid of validation, edit and style the buttons and disable the input for the book name.
