@@ -62,4 +62,14 @@
 &nbsp;
 ### 07 Display the Books navbar link
 
-* Edit *_Layout.cshtml*. Remove the *Home*, *About* and *Contact* links and display the *Books* link which points to the *Index* action of the *Books* controller.  
+* Edit *_Layout.cshtml*. Remove the *Home*, *About* and *Contact* links and display the *Books* link which points to the *Index* action of the *Books* controller.
+
+
+&nbsp;
+### 08 Add the *Create* GET and POST action methods 
+
+* Add the *Create* GET action method which will return the relevant view.
+* Add the *Create* POST action method. Use the *HttpPost* and *ValidateAntiForgeryToken* attributes.
+* The POST method returns an async Task which redirects to the *Index* action after saving the new book in the db. If the model state is not valid, it returns the view and passes the received book object.
+
+
