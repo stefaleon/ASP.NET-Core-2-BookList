@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using BookList.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace BookList.Controllers
 {
@@ -41,6 +42,20 @@ namespace BookList.Controllers
             }
             return View(book);
 
+        }
+
+        //GET: Books/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null) {
+                return Content("Invalid book ID");
+            }
+            var book = await _db.Books.SingleOrDefaultAsync(m => m.Id == id);
+            if (book == null)
+            {
+                return Content("This book cannot be found");
+            }
+            return View(book);
         }
 
         protected override void Dispose(bool disposing)

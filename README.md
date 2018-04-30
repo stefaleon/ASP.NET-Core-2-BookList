@@ -87,3 +87,14 @@
 * Tie the view to a *Book* model.
 * Add a form. Use tag-helpers for the form-action, validation, labels and inputs and style with Bootstrap classes.
 * Add the *Create* and *Back* button styled inputs.
+
+
+&nbsp;
+### 11 Add the *Details* action and view
+
+* Add the *Details* GET action method. It takes a book id parameter and returns an async Task which displays the view of the specific book or appropriate error messages.
+* Right click on the *Details* action method and add the *Views/Books/Details.cshtml* view.
+* Tie the view to a *Book* model.
+* Display the book name in a disabled input tag.
+* Display the *Edit* and *Back To List* button styled links.
+* Use tag-helpers in order to get the links to call the appropriate actions and route the *Edit* link to the proper book id.
