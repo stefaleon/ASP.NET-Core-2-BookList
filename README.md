@@ -58,3 +58,8 @@
 * Use html-helpers in the Razor code which loops through and displays the model items.
 * Use tag-helpers to display the *Edit* and *Delete* buttons.
 
+
+&nbsp;
+### 07 Display the Books navbar link
+
+* Edit *_Layout.cshtml*. Remove the *Home*, *About* and *Contact* links and display the *Books* link which points to the *Index* action of the *Books* controller.  
