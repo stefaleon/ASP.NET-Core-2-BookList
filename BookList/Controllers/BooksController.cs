@@ -106,6 +106,18 @@ namespace BookList.Controllers
             return View(book);
         }
 
+        //POST: Books/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> RemoveBook(int id)
+        {
+            var book = await _db.Books.SingleOrDefaultAsync(m => m.Id == id);
+            _db.Books.Remove(book);
+            await _db.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));            
+        }
+
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)

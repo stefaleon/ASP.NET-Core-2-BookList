@@ -114,3 +114,14 @@
 * Checks for matching of the id parameter with the book object id.
 * It returns an async Task which redirects to the *Index* action after updating the book in the db. 
 * If the model state is not valid, it returns the view and passes the received book object.
+
+
+
+&nbsp;
+### 14 Add the *Delete* POST action method
+
+* Has the *HttpPost* and *ValidateAntiForgeryToken* attributes.
+* We can name it anything if we include the *ActionName* attribute and set it to *Delete*.
+* Takes an id parameter.
+* Finds the book object that matches the id and removes it from the db.
+* Returns an async Task which redirects to the *Index* action.
