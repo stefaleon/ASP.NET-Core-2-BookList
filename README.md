@@ -73,3 +73,8 @@
 * The POST method returns an async Task which redirects to the *Index* action after saving the new book in the db. If the model state is not valid, it returns the view and passes the received book object.
 
 
+&nbsp;
+### 09 Make the *Name* property required
+
+* Use data annotations in the model to make the book name required.
+* Add a migration and update the database.
