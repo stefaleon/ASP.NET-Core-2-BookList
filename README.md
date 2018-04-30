@@ -78,3 +78,12 @@
 
 * Use data annotations in the model to make the book name required.
 * Add a migration and update the database.
+
+
+&nbsp;
+### 10 Add the *Create* View
+
+* Right click on the *Create* action method and add the *Views/Books/Create.cshtml* view.
+* Tie the view to a *Book* model.
+* Add a form. Use tag-helpers for the form-action, validation, labels and inputs and style with Bootstrap classes.
+* Add the *Create* and *Back* button styled inputs.
