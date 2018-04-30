@@ -30,3 +30,10 @@
 
 * In *Startup.cs*, add the *AddDbContext* service.
 * Define the connection string in *appsettings.json*.
+
+
+&nbsp;
+### 04 AddBookModel migration
+
+* `PM> add-migration AddBookModel`
+* `PM> update-database`
