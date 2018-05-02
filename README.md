@@ -66,7 +66,7 @@
 
 
 &nbsp;
-### 08 Add the *Create* GET and POST action methods 
+### 08 Add the *Create* GET and POST action methods
 
 * Add the *Create* GET action method which will return the relevant view.
 * Add the *Create* POST action method. Use the *HttpPost* and *ValidateAntiForgeryToken* attributes.
@@ -110,9 +110,9 @@
 ### 13 Add the *Edit* POST action method
 
 * The *Edit* POST method uses the *HttpPost* and *ValidateAntiForgeryToken* attributes.
-* It takes two parameters, a book id and a book object. 
+* It takes two parameters, a book id and a book object.
 * Checks for matching of the id parameter with the book object id.
-* It returns an async Task which redirects to the *Index* action after updating the book in the db. 
+* It returns an async Task which redirects to the *Index* action after updating the book in the db.
 * If the model state is not valid, it returns the view and passes the received book object.
 
 
@@ -133,3 +133,16 @@
 
 * Add the *Edit* view. Copy the code of the *Create* view. Direct the form asp-action to the *Edit* action and adjust the button text accordingly.
 * Create the *Delete* view as another copy and make the appropriate adjustments. Direct to the *Delete* action, rid of validation, edit and style the buttons and disable the input for the book name.
+
+
+
+
+&nbsp;
+## Deploy on IIS
+
+* Create an SQL Server database (not on localDb!).
+* Change the connection string.
+* Publish to a folder.
+* Create the hosting site on IIS.
+* Point to the published output.
+* Install the **.NET Core Windows Server Hosting Bundle**!
